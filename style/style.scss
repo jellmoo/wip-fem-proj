@@ -1,0 +1,179 @@
+@import "./reset";
+@import "./typography";
+@import "./variables";
+
+// Article Preview Component
+.article-preview {
+    background-color: $grey-200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
+    &__container {
+        width: 100%;
+        min-height: auto;
+        @include flex-center;
+    }
+
+    &__content {
+        display: flex;
+        width: 730px;
+        height: 280px;
+        align-items: center;
+        background-color: $white;
+        gap: $spacing-500;
+        border-radius: 10px;
+        box-shadow: 0px 40px 40px -10px rgba($grey-400, 0.3);
+    }
+
+    &__image {
+        width: 285px;
+        height: 280px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
+    }
+
+    &__text {
+        max-width: 100%;
+        text-align: left;
+        
+    }
+
+    &__title {
+        @include font-text-preset-1;
+        color: $grey-900;
+        margin-bottom: $spacing-300;
+    }
+
+    &__description {
+        @include font-text-preset-2;
+        color: $grey-500;
+        margin-bottom: $spacing-300;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Author Component
+.author {
+    display: flex;
+    position: relative;
+
+    &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: $spacing-200;
+    }
+
+    &__name {
+        @include font-text-preset-2-bold;
+        color: $grey-900;
+    }
+
+    &__date {
+        @include font-text-preset-2;
+        color: $grey-400;
+    }
+}
+
+// Button Container Component
+.button-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__menu {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        box-shadow: rgba($grey-200, 0.56) 0px 30px 40px -10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $grey-900;
+        }
+    }
+
+    &__button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Menu Component
+.menu {
+    width: 248px;
+    height: 67px;
+    background-color: $grey-900;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 18px;
+    z-index: 10;
+
+    &__icon,
+    &__text {
+        cursor: pointer;
+    }
+
+    &__text {
+        @include font-text-preset-2;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: $grey-400;
+    }
+}
+
+// Share Button Component
+.share-button {
+    background-color: $grey-200;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &__icon {
+        width: 15px;
+        height: 13px;
+    }
+
+    &.active {
+        background-color: $grey-900;
+
+        .share-button__icon {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@import "./media";

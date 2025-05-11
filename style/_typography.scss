@@ -1,0 +1,36 @@
+@mixin font-text-preset-1 {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+
+@mixin font-text-preset-2 {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-decoration: none;
+    letter-spacing: 0.1%;
+}
+
+@mixin font-text-preset-2-bold {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    text-decoration: none;
+    letter-spacing: 0.1%;
+}
+
+@mixin font-text-preset-3 {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    text-decoration: none;
+    letter-spacing: 25%;
+    text-transform: upper-case;
+}

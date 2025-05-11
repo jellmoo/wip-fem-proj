@@ -1,0 +1,26 @@
+$grey-900: rgba(72, 85, 106);
+$grey-500: rgba(110, 128, 152);
+$grey-400: rgba(157, 174, 194);
+$grey-200: rgba(236, 242, 248);
+$white: rgba(255, 255, 255);
+
+$spacing-0: 0px;
+$spacing-200: 16px;
+$spacing-300: 24px;
+$spacing-400: 32px;
+$spacing-500: 40px;
+$spacing-600: 48px;
+$spacing-700: 56px;
+$spacing-800: 64px;
+$spacing-1300: 104px;
+$spacing-2000: 160px;
+
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile-landscape: 768px;
+$breakpoint-mobile-portrait: 480px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="style/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+
+  <main class="article-preview">
+
+    <article class="article-preview__container">
+      <div class="article-preview__content">
+        <img class="article-preview__image" src="images/drawers.jpg" alt="Furniture in a room" />
+        
+        <div class="article-preview__text">
+          <h1 class="article-preview__title">
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h1>
+          <p class="article-preview__description">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+            I've got some simple tips to help you make any room feel complete.
+          </p>
+
+          <footer class="article-preview__footer">
+            <div class="author">
+              <img class="author__image" src="images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton" />
+              <div class="author__info">
+                <p class="author__name">Michelle Appleton</p>
+                <time class="author__date" datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
+
+            <div class="button-container">
+              <div class="menu-container button-container__menu">
+                <div class="menu menu-container__menu">
+                  <p class="menu__text">Share</p>
+                  <img class="menu__icon" src="images/icon-facebook.svg" />
+                  <img class="menu__icon" src="images/icon-twitter.svg" />
+                  <img class="menu__icon" src="images/icon-pinterest.svg" />
+                </div>
+              </div>
+              <div class="button-container__button">
+                <button class="share-button" id="share-button" aria-label="Share">
+                  <img class="share-button__icon" src="images/icon-share.svg" alt="Share icon" />
+                </button>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </footer>
+    </article>
+
+  </main>
+  
+<script src="main.js"></script>
+</body>
+</html>
